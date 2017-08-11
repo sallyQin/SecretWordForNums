@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">数字密语</string>
+    <string name="delete_txt">删除 \n重选</string>
+</resources>

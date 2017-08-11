@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1.digitsecretword.SecondActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:textColor="@drawable/selector_color_text"
+        android:background="@drawable/selector_button"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text=" 获 取 密 语 " />
+
+    <com.example.a1.digitsecretword.MyView
+        android:id="@+id/myView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            android:orientation="vertical"
+            app:spanCount="5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/delete_icon"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/selector_button"
+            android:layout_gravity="right|center_vertical"
+            android:drawableLeft="@drawable/delete_icon"
+            android:text="@string/delete_txt"
+            android:textColor="@drawable/selector_color_text"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp" />
+    </LinearLayout>
+</LinearLayout>
