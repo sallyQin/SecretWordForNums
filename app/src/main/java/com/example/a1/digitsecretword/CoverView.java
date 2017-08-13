@@ -127,7 +127,7 @@ public class CoverView extends View implements Runnable{
             int halfWidth = originalWidth;
             int halfHeight = originalHeight;
             while ((halfWidth / inSampleSize > reqWidth/4)
-        ||(halfHeight / inSampleSize > reqHeight)) {
+                    ||(halfHeight / inSampleSize > reqHeight)) {
                 inSampleSize *= 2;
             }
         }
@@ -218,7 +218,7 @@ public class CoverView extends View implements Runnable{
                 postInvalidate();
             }
 
-                ((MainActivity)getContext()).enabledButton();
+            ((MainActivity)getContext()).enabledButton();
 
         }
     }

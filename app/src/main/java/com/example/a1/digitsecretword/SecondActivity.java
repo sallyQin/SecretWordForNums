@@ -44,7 +44,6 @@ public class SecondActivity  extends AppCompatActivity{
                     String perNumStr = myView.getOrderLists().get(i).toString();
                     wholeNumStr = wholeNumStr + perNumStr;
                 }
-                // int wholeNumInt = Integer.getInteger(wholeNumStr); //获取int值
                 MyDatabaseOpenHelper myDatabaseOpenHelper = new MyDatabaseOpenHelper(SecondActivity.this);
                 SQLiteDatabase sqlDatabase = myDatabaseOpenHelper.getWritableDatabase();
                 Cursor cursor = sqlDatabase.query(MyDatabaseOpenHelper.TABLE_NAME, null, "alphabet = ?",
@@ -86,7 +85,6 @@ public class SecondActivity  extends AppCompatActivity{
                             myView.thread_seaDolphin.interrupt();
                         }
                         try {
-          //                  myView.bitmap_dolphin=null;
                             myView.getWhiteBgBitmap();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
